@@ -15,6 +15,7 @@ using namespace std;
 class Assignment {
 public:
 	Assignment(string n, int due, string des, int p, int cat, int cou);
+	Assignment(string n);
 	virtual ~Assignment();
 	string getName();
 	void setName(string);

@@ -8,6 +8,15 @@
 #include "Assignment.h"
 #include <string>
 
+
+Assignment::Assignment(string n){
+	name = n;
+		this->due = 0;
+		description = " ";
+		points = 0;
+		category = 0;
+		course = 0;
+}
 Assignment::Assignment(string n, int due, string des, int p, int cat, int cou){
 	name = n;
 	this->due = due;
