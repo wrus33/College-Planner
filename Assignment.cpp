@@ -17,6 +17,14 @@ Assignment::Assignment(string n){
 		category = 0;
 		course = 0;
 }
+Assignment::Assignment(){
+	name = " ";
+	this->due = 0;
+	description = " ";
+	points = 0;
+	category = 0;
+	course = 0;
+}
 Assignment::Assignment(string n, int due, string des, int p, int cat, int cou){
 	name = n;
 	this->due = due;
@@ -59,4 +67,10 @@ int Assignment::getCourse(){
 }
 void Assignment::setCourse(int c){
 	course = c;
+}
+int Assignment::getPoints(){
+	return points;
+}
+void Assignment::setPoints(int p){
+	points = p;
 }

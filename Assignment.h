@@ -14,6 +14,7 @@ using namespace std;
 
 class Assignment {
 public:
+	Assignment();
 	Assignment(string n, int due, string des, int p, int cat, int cou);
 	Assignment(string n);
 	virtual ~Assignment();
@@ -27,6 +28,8 @@ public:
 	void setCategory(int);
 	int getCourse();
 	void setCourse(int);
+	void setPoints(int);
+	int getPoints();
 
 
 private:
